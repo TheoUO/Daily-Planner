@@ -37,6 +37,7 @@ function blockColor() {
    });
 
    }
+   blockColor()
 
 // Fourth
 // Click the time-block, be able to input information
