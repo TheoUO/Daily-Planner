@@ -11,12 +11,12 @@
 
 ## Description 
 
-[Visit the Deployed Site](https://theouo.github.io/Code-Quiz/)
+[Visit the Deployed Site](https://theouo.github.io/Daily-Planner/)
 
 For this project, I create a daily planner where users can input their tasks for the day.
 
 
-![Site Langing Page](./images/codeQ.png)
+![Site Langing Page](./Assets/planner.png)
 
 
 ## Usage 
