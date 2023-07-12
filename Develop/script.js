@@ -26,6 +26,8 @@ var now = dayjs().format('H'); // = 18
 //var timeBlock = $('.time-block')
 
 //assign each time block a value to compare to now
+// select the the divs with their class
+// find a code to select the numbers in the id value of each div
 
 function blockColor() {
    $('.time-block').each(function() {
@@ -43,6 +45,9 @@ function blockColor() {
 // Click the time-block, be able to input information
 // When I click the save button - text is saved in local storage 
 // Event Listener on Save Button to save the info to Local Storage
+
+
+
 
 //Fifth 
 // When we refresh the page, then the saved events persist.
