@@ -12,7 +12,8 @@ $('#currentDay').text(today);
 
 
 
-// Add additional time blocks to HTML
+// Add additional time blocks to HTML - In the HTML
+
 
 
 // Color code time blocks to indicate Past / Present / Future
