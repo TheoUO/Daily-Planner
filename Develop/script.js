@@ -47,7 +47,7 @@ function blockColor() {
 // Event Listener on Save Button to save the info to Local Storage
 
 function saveText() {
-$('.Btn').on('click', function() {
+$('.saveBtn').on('click', function() {
   var key = $(this).parent().attr('id')
   var value = $(this).siblings('.description').val();
   localStorage.setItem(key, value);
@@ -71,13 +71,14 @@ function colorRef() {
     }
   });
 }
+colorRef()
 
 
 
 //we need to get the info from localStorage and have it read to the DOM
 
-$('time-block').each(function() {
-  var key = $(this).parent().attr('id')
+$('.time-block').each(function() {
+  var key = $(this).attr('id')
   var value = localStorage.getItem(key);
   $(this).children('.description').val(value);
 
