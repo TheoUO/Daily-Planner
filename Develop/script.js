@@ -58,10 +58,23 @@ saveText()
 
 
 // When we refresh the page, then the saved events persist.
+//we need to refresh the block colors each time depending on the current time
+function colorRef() {
+  $('.time-block').each(function() {
+    var hour = parseInt(this.id);
+    if (hour == now) {
+      $(this).removeClass('past future').addClass('present');
+    } else if (hour < now) {
+      $(this).removeClass('future present').addClass('past');
+    } else {
+      $(this).removeClass('past present').addClass('future')
+    }
+  });
+}
 
 
 
-
+//we need to get the info from localStorage and have it read to the DOM
 
 $('time-block').each(function() {
   var key = $(this).parent().attr('id')
