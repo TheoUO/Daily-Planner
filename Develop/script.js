@@ -18,7 +18,7 @@ $('#currentDay').text(today);
 // Color code time blocks to indicate Past / Present / Future
    // Detect past / present / future
 
-var now = dayjs().format('H'); // = 18 
+var now = dayjs().format('H');  
    console.log(now);
 
 
@@ -46,7 +46,14 @@ function blockColor() {
 // When I click the save button - text is saved in local storage 
 // Event Listener on Save Button to save the info to Local Storage
 
-
+function saveText() {
+$('.Btn').on('click', function() {
+  var key = $(this).parent().attr('id')
+  var value = $(this).siblings('.description').val();
+  localStorage.setItem(key, value);
+});
+}
+saveText()
 
 
 //Fifth 
